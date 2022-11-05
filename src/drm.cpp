@@ -1958,7 +1958,7 @@ bool drm_set_color_mtx(struct drm_t *drm, float *mtx, enum drm_screen_type scree
 
 void drm_set_vrr_enabled(struct drm_t *drm, bool enabled)
 {
-	drm->wants_vrr_enabled = enabled;
+	drm->wants_vrr_enabled = true;
 }
 
 bool drm_get_vrr_in_use(struct drm_t *drm)
